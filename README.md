@@ -2,22 +2,12 @@ taskwarrior.vim
 ===============
 _a vim interface for [Taskwarrior](https://taskwarrior.org)_
 
-![screenshot](https://raw.githubusercontent.com/xarthurx/taskwarrior.vim/master/screenshot.gif)
-
-## Notice
-
-**2021-04**
-After WSL 2 released, I came back to look at the `TaskWarrior` system again, and found [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui).
-
-(An alternative is the [VIT](https://github.com/vit-project/vit), which has longer history and has both distribution release and `python` version that you can install with `pip`.)
-
-These programs provides similar aim to what `taskwarrior.vim` would like to achieve and I feel continuing this plugin is somewhat repetitive.
-
-My personal preference goes to [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui). The interface is written in `Rust`, runs faster and has better framework setup, as well as better user interaction. I'll contribute to that project instead of continuing `taskwarrior.vim`.
+![screenshot](https://raw.githubusercontent.com/linuxcaffe/taskwarrior.vim/master/screenshot.gif)
 
 ## Introduction
 
-**This repo is forked from [blindFS/vim-taskwarrior](https://github.com/blindFS/vim-taskwarrior) for maintenance and development.**
+**This project was origionally developed by [blindFS/vim-taskwarrior](https://github.com/blindFS/vim-taskwarrior) with some design and badgerring by djp,
+then renamed, maintained and improved by [xarthurx/taskwarrior.vim](https://github.com/xarthurx/taskwarrior.vim) now forked by [linuxcaffe/taskwarrior.vim](https://github.com/linuxcaffe/taskwarrior.vim) for maintenance and development.**
 
 ----
 [taskwarrior.vim](https://github.com/xarthurx/taskwarrior.vim) is a vim plugin that extends Taskwarrior with an interactive
