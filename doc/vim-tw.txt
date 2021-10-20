@@ -69,92 +69,92 @@ let g:task_rc_override = 'rc.defaultwidth=999'
 ==============================================================================
 3. MAPPING                                                         *tw-mappings*
 
-<Plug>(taskwarrior_quickref)         :quick reference
-<Plug>(taskwarrior_quit)             :quit the buffer
-<Plug>(taskwarrior_skip_left)        :move the cursor to the left field, skipping blanks
-<Plug>(taskwarrior_step_left)        :move the cursor to the left field without skipping
-<Plug>(taskwarrior_skip_right)       :... right ...
-<Plug>(taskwarrior_step_right)       :... ...
-<Plug>(taskwarrior_sort_increase)    :increase the priority of current field in sorting
-<Plug>(taskwarrior_sort_decrease)    :decrease ...
-<Plug>(taskwarrior_sort_inverse)     :invert the sorting method of the main field
-<Plug>(taskwarrior_show_info)        :show information
-<Plug>(taskwarrior_filter)           :apply a new filter to the tasks
-<Plug>(taskwarrior_next_format)      :change the format of current field to the next one
-<Plug>(taskwarrior_previous_format)  :... previous ...
-<Plug>(taskwarrior_next_history)     :next history of report
-<Plug>(taskwarrior_previous_history) :previous ...
-<Plug>(taskwarrior_new_bookmark)     :add a new bookmark for current setup
-<Plug>(taskwarrior_visual_show_info) :show informations about selected tasks
 <Plug>(taskwarrior_annotate)         :add a new annotation
-<Plug>(taskwarrior_denotate)         :delete the annotation
-<Plug>(taskwarrior_open_annotate)    :open the annotation as a file or url
-<Plug>(taskwarrior_remove)           :remove the task
-<Plug>(taskwarrior_delete)           :remove the task/annotation
-<Plug>(taskwarrior_new)              :new task
-<Plug>(taskwarrior_command)          :apply a command to selected tasks
-<Plug>(taskwarrior_done)             :set the selected tasks done
-<Plug>(taskwarrior_report)           :change report type
-<Plug>(taskwarrior_refresh)          :refresh the buffer
 <Plug>(taskwarrior_clear_completed)  :clear all completed tasks
-<Plug>(taskwarrior_undo)             :undo
-<Plug>(taskwarrior_sync)             :synchronise with the remote server
+<Plug>(taskwarrior_command)          :apply a command to selected tasks
+<Plug>(taskwarrior_decrease)         :decrease ...
+<Plug>(taskwarrior_delete)           :remove the task/annotation
+<Plug>(taskwarrior_denotate)         :delete the annotation
+<Plug>(taskwarrior_done)             :set the selected tasks done
+<Plug>(taskwarrior_filter)           :apply a new filter to the tasks
+<Plug>(taskwarrior_increase)         :increase a number/date
 <Plug>(taskwarrior_modify_field)     :modify current field of the task
 <Plug>(taskwarrior_modify_task)      :modify the fields specified in |g:task_default_prompt|
+<Plug>(taskwarrior_new)              :new task
+<Plug>(taskwarrior_new_bookmark)     :add a new bookmark for current setup
+<Plug>(taskwarrior_next_format)      :change the format of current field to the next one
+<Plug>(taskwarrior_next_history)     :next history of report
+<Plug>(taskwarrior_open_annotate)    :open the annotation as a file or url
 <Plug>(taskwarrior_paste)            :duplicate the selected tasks
-<Plug>(taskwarrior_start_task)       :start a task
-<Plug>(taskwarrior_stop_task)        :stop a task
+<Plug>(taskwarrior_previous_format)  :... previous ...
+<Plug>(taskwarrior_previous_history) :previous ...
+<Plug>(taskwarrior_quickref)         :quick reference
+<Plug>(taskwarrior_quit)             :quit the buffer
+<Plug>(taskwarrior_refresh)          :refresh the buffer
+<Plug>(taskwarrior_remove)           :remove the task
+<Plug>(taskwarrior_report)           :change report type
 <Plug>(taskwarrior_select)           :select a task
-<Plug>(taskwarrior_increase)         :increase a number/date
-<Plug>(taskwarrior_decrease)         :decrease ...
-<Plug>(taskwarrior_visual_done)      :set visual selected tasks done
+<Plug>(taskwarrior_show_info)        :show information
+<Plug>(taskwarrior_skip_left)        :move the cursor to the left field, skipping blanks
+<Plug>(taskwarrior_skip_right)       :... right ...
+<Plug>(taskwarrior_sort_decrease)    :decrease ...
+<Plug>(taskwarrior_sort_increase)    :increase the priority of current field in sorting
+<Plug>(taskwarrior_sort_inverse)     :invert the sorting method of the main field
+<Plug>(taskwarrior_start_task)       :start a task
+<Plug>(taskwarrior_step_left)        :move the cursor to the left field without skipping
+<Plug>(taskwarrior_step_right)       :... ...
+<Plug>(taskwarrior_stop_task)        :stop a task
+<Plug>(taskwarrior_sync)             :synchronise with the remote server
+<Plug>(taskwarrior_undo)             :undo
 <Plug>(taskwarrior_visual_delete)    :delete visual selected tasks
+<Plug>(taskwarrior_visual_done)      :set visual selected tasks done
 <Plug>(taskwarrior_visual_select)    :select visual selected tasks
+<Plug>(taskwarrior_visual_show_info) :show informations about selected tasks
 
 Default ones
 ------------------------------------------------------------------------------
-<F1>    <Plug>(taskwarrior_quickref)
-q       <Plug>(taskwarrior_quit)
-<left>  <Plug>(taskwarrior_skip_left)
-<S-tab> <Plug>(taskwarrior_step_left)
-<right> <Plug>(taskwarrior_skip_right)
-<tab>   <Plug>(taskwarrior_step_right)
-<       <Plug>(taskwarrior_sort_increase)
->       <Plug>(taskwarrior_sort_decrease)
-s       <Plug>(taskwarrior_sort_inverse)
-<CR>    <Plug>(taskwarrior_show_info)
-f       <Plug>(taskwarrior_filter)
-H       <Plug>(taskwarrior_next_format)
-L       <Plug>(taskwarrior_previous_format)
-J       <Plug>(taskwarrior_next_history)
-K       <Plug>(taskwarrior_previous_history)
-B       <Plug>(taskwarrior_new_bookmark)
-<CR>    <Plug>(taskwarrior_visual_show_info)
-A       <Plug>(taskwarrior_annotate)
-x       <Plug>(taskwarrior_denotate)
-o       <Plug>(taskwarrior_open_annotate)
-D       <Plug>(taskwarrior_remove)
-<Del>   <Plug>(taskwarrior_delete)
-a       <Plug>(taskwarrior_new)
-c       <Plug>(taskwarrior_command)
-d       <Plug>(taskwarrior_done)
-r       <Plug>(taskwarrior_report)
-R       <Plug>(taskwarrior_refresh)
-X       <Plug>(taskwarrior_clear_completed)
-u       <Plug>(taskwarrior_undo)
-S       <Plug>(taskwarrior_sync)
-m       <Plug>(taskwarrior_modify_field)
-M       <Plug>(taskwarrior_modify_task)
-p       <Plug>(taskwarrior_paste)
 +       <Plug>(taskwarrior_start_task)
 -       <Plug>(taskwarrior_stop_task)
-<Space> <Plug>(taskwarrior_select)
+<       <Plug>(taskwarrior_sort_increase)
+>       <Plug>(taskwarrior_sort_decrease)
 <C-A>   <Plug>(taskwarrior_increase)
 <C-X>   <Plug>(taskwarrior_decrease)
-d       <Plug>(taskwarrior_visual_done)
-D       <Plug>(taskwarrior_visual_delete)
+<CR>    <Plug>(taskwarrior_show_info)
+<Del>   <Plug>(taskwarrior_delete)
+<F1>    <Plug>(taskwarrior_quickref)
+<left>  <Plug>(taskwarrior_skip_left)
+<right> <Plug>(taskwarrior_skip_right)
+<Space> <Plug>(taskwarrior_select)
+<tab>   <Plug>(taskwarrior_step_right)
+<S-tab> <Plug>(taskwarrior_step_left)
+a       <Plug>(taskwarrior_new)
+A       <Plug>(taskwarrior_annotate)
+B       <Plug>(taskwarrior_new_bookmark)
+c       <Plug>(taskwarrior_command)
+d       <Plug>(taskwarrior_done)
+D       <Plug>(taskwarrior_remove)
+f       <Plug>(taskwarrior_filter)
+H       <Plug>(taskwarrior_next_format)
+J       <Plug>(taskwarrior_next_history)
+K       <Plug>(taskwarrior_previous_history)
+L       <Plug>(taskwarrior_previous_format)
+m       <Plug>(taskwarrior_modify_field)
+M       <Plug>(taskwarrior_modify_task)
+o       <Plug>(taskwarrior_open_annotate)
+p       <Plug>(taskwarrior_paste)
+q       <Plug>(taskwarrior_quit)
+r       <Plug>(taskwarrior_report)
+R       <Plug>(taskwarrior_refresh)
+s       <Plug>(taskwarrior_sort_inverse)
+S       <Plug>(taskwarrior_sync)
+u       <Plug>(taskwarrior_undo)
+x       <Plug>(taskwarrior_denotate)
+X       <Plug>(taskwarrior_clear_completed)
+<CR>    <Plug>(taskwarrior_visual_show_info)
 <Del>   <Plug>(taskwarrior_visual_delete)
 <Space> <Plug>(taskwarrior_visual_select)
+D       <Plug>(taskwarrior_visual_delete)
+d       <Plug>(taskwarrior_visual_done)
 
 How to change
 ------------------------------------------------------------------------------

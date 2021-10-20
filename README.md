@@ -64,71 +64,72 @@ Since TaskWarrior does not provide a [native Windows version](https://github.com
 ### Default map:
 
 ```vim
-nnoremap <buffer> A       ... " add annotation
-nnoremap <buffer> x       ... " delete annotation.
-nnoremap <buffer> o       ... " open the annotation as a file.
-nnoremap <buffer> a       ... " create new task.
-nnoremap <buffer> d       ... " set the task in current line done.
-nnoremap <buffer> D       ... " delete field/annotation/task
-nnoremap <buffer> <Space> ... " select/remove current task to selected list
-nnoremap <buffer> m       ... " modify current field.
-nnoremap <buffer> M       ... " modify current task.
-nnoremap <buffer> f       ... " change filter
-nnoremap <buffer> r       ... " change report type
-nnoremap <buffer> c       ... " execute a command for selected tasks/current task
-nnoremap <buffer> R       ... " refresh the report/clear selected list
-nnoremap <buffer> q       ... " quit buffer.
-nnoremap <buffer> X       ... " clear all completed task.
-nnoremap <buffer> p       ... " duplicate selected tasks
-nnoremap <buffer> u       ... " undo last change.
 nnoremap <buffer> +       ... " start task
 nnoremap <buffer> -       ... " stop task
-nnoremap <buffer> S       ... " sync with taskd server.
-nnoremap <buffer> s       ... " sort by this column primarily.(if already of the highest priority then switch the polarity)
-nnoremap <buffer> <       ... " sort by this column increasingly.(if already increasingly then increase its priority)
-nnoremap <buffer> >       ... " sort by this column decreasingly.(if already decreasingly then decrease its priority)
+nnoremap <buffer> <       ... " sort by this column ascending.(if already ascending then decrease its priority)
+nnoremap <buffer> >       ... " sort by this column descending.(if already descending then decrease its priority)
+nnoremap <buffer> <CR>    ... " show task info
+nnoremap <buffer> <F1>    ... " show vim-tw.txt help
+nnoremap <buffer> <left>  ... " skip left to the previous non-empty column
+nnoremap <buffer> <right> ... " skip right to the next non-empty column
+nnoremap <buffer> <TAB>   ... " move right the next column
+nnoremap <buffer> <S-TAB> ... " move left to the previous column
+nnoremap <buffer> <Space> ... " select/remove current task to/from selected list
+nnoremap <buffer> a       ... " create new task
+nnoremap <buffer> A       ... " add annotation
+nnoremap <buffer> B       ... " create a bookmark for current combination
+nnoremap <buffer> c       ... " execute a task command for selected task(s)
+nnoremap <buffer> d       ... " task done (completed)
+nnoremap <buffer> D       ... " delete field/annotation/task
+nnoremap <buffer> f       ... " change filter
 nnoremap <buffer> H       ... " cycle column format left
-nnoremap <buffer> L       ... " cycle column format right
 nnoremap <buffer> J       ... " next historical entry
 nnoremap <buffer> K       ... " previous historical entry
-nnoremap <buffer> B       ... " create a bookmark for current combination
-nnoremap <buffer> <F1>    ... " view the documents
-nnoremap <buffer> <CR>    ... " show task info.
-nnoremap <buffer> <TAB>   ... " jump to the next column
-nnoremap <buffer> <S-TAB> ... " jump to the previous column
-nnoremap <buffer> <right> ... " jump to the next non-empty column
-nnoremap <buffer> <left>  ... " jump to the previous non-empty column
-vnoremap <buffer> d       ... " set done to all visual selected tasks
-vnoremap <buffer> D       ... " delete all visual selected tasks
+nnoremap <buffer> L       ... " cycle column format right
+nnoremap <buffer> m       ... " modify current field
+nnoremap <buffer> M       ... " modify current task with (customizable) prompts
+nnoremap <buffer> o       ... " open the annotation as a file
+nnoremap <buffer> p       ... " duplicate selected task(s)
+nnoremap <buffer> q       ... " quit
+nnoremap <buffer> r       ... " change report (use config option for custom reports)
+nnoremap <buffer> R       ... " refresh the report/ clear selected list
+nnoremap <buffer> s       ... " sort by this column primarily.(if already of the highest priority then switch the polarity)
+nnoremap <buffer> S       ... " task sync
+nnoremap <buffer> u       ... " undo last change.
+nnoremap <buffer> x       ... " delete annotation.
+nnoremap <buffer> X       ... " clear all completed tasks
+
 vnoremap <buffer> <CR>    ... " show information about visual selected tasks
 vnoremap <buffer> <Space> ... " add visual selected tasks to selected list
+vnoremap <buffer> d       ... " set done to all visual selected tasks
+vnoremap <buffer> D       ... " delete all visual selected tasks
 
 ```
 ### Commands:
 
 ```vim
 :TW [args]            " task [filter report arguments]
-:TWUndo               " undo the previous modification
-:TWEditTaskrc         " edit ~/.taskrc
-:TWEditVitrc          " edit ~/.vitrc
-:TWDeleteCompleted    " clear all completed tasks
 :TWAdd                " add new tasks interactively
 :TWAnnotate           " add an annotation
+:TWBookmark           " list bookmarks using unite.vim
+:TWBookmarkClear      " clear bookmarks
 :TWComplete           " mark task done
 :TWDelete             " deleta a task
 :TWDeleteAnnotation   " delete an annotation
+:TWDeleteCompleted    " clear all completed tasks
+:TWEditTaskrc         " edit ~/.taskrc
+:TWEditVitrc          " edit ~/.vitrc
+:TWHistory            " list history records using unite.vim
+:TWHistoryClear       " clear history
 :TWModifyInteractive  " make changes to a task interactively (use with caution!)
 :TWReportInfo         " run the info report
 :TWReportSort [args]  " overide the sort method, reset to default if no arguments passed
 :TWSync               " synchronise with taskd server
-:TWToggleReadonly     " toggle readonly option
 :TWToggleHLField      " toggle highlight field option
-:TWHistory            " list history records using unite.vim
-:TWHistoryClear       " clear history
-:TWBookmark           " list bookmarks using unite.vim
-:TWBookmarkClear      " clear bookmarks
-
+:TWToggleReadonly     " toggle readonly option
+:TWUndo               " undo the previous modification
 ```
+----
 ### User options:
 
 ```vim
@@ -177,28 +178,27 @@ If you experience task truncation (taskwarrior.vim not showing enough tasks) add
 ```vim
 let g:task_rc_override = 'rc.defaultheight=0'
 ```
-
-
+----
 ### Syntax highlightling:
 
 Default scheme:
 
 ```vim
-highlight default link taskwarrior_tablehead   Tabline
-highlight default link taskwarrior_field       IncSearch
-highlight default link taskwarrior_selected    Visual
-highlight default link taskwarrior_id          VarId
-highlight default link taskwarrior_project     String
 highlight default link taskwarrior_Status      Include
-highlight default link taskwarrior_priority    Class
+highlight default link taskwarrior_depends     Todo
+highlight default link taskwarrior_description Normal
 highlight default link taskwarrior_due         Todo
 highlight default link taskwarrior_end         Keyword
-highlight default link taskwarrior_description Normal
 highlight default link taskwarrior_entry       Special
-highlight default link taskwarrior_depends     Todo
+highlight default link taskwarrior_field       IncSearch
+highlight default link taskwarrior_id          VarId
+highlight default link taskwarrior_priority    Class
+highlight default link taskwarrior_project     String
+highlight default link taskwarrior_selected    Visual
+highlight default link taskwarrior_tablehead   Tabline
 highlight default link taskwarrior_tags        Keyword
-highlight default link taskwarrior_uuid        VarId
 highlight default link taskwarrior_urgency     Todo
+highlight default link taskwarrior_uuid        VarId
 ```
 
 Feel free to change any of above by something like below in your `vimrc`.
