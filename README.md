@@ -10,11 +10,11 @@ _a vim interface for [Taskwarrior](https://taskwarrior.org)_
 then renamed, maintained and improved by [xarthurx/taskwarrior.vim](https://github.com/xarthurx/taskwarrior.vim) now forked by [linuxcaffe/taskwarrior.vim](https://github.com/linuxcaffe/taskwarrior.vim) for maintenance and development.**
 
 ----
-[taskwarrior.vim](https://github.com/xarthurx/taskwarrior.vim) is a vim plugin that extends Taskwarrior with an interactive
+[taskwarrior.vim](https://github.com/linuxcaffe/taskwarrior.vim) is a vim plugin that extends Taskwarrior with an interactive
 interface. It features a rich set of mappings and commands, is easy to customize,
 and makes adding, modifying, sorting, reporting and marking done, fast, easy and fun!
 
-## Things added since forked
+## Things added by xarthurx's fork
 
 * Support for native Windows 10 by calling *TaskWarrior* from *WSL* (*TaskWarrior* need to be installed inside *WSL*).
 * Fix `del` and `undo` bug by ignoring confirmation from shell.
