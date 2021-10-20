@@ -46,7 +46,7 @@ interactive interface. It features a rich set of mappings and commands, is
 easy to customize and makes adding, modifying, sorting and marking tasks
 done, fast, easy and fun!
 
-Homepage: https://github.com/xarthurx/taskwarrior.vim, patches welcome!
+Homepage: https://github.com/linuxcaffe/taskwarrior.vim, patches welcome!
 
 The plugin is forked from the original vim-taskwarrior.
 
@@ -255,7 +255,7 @@ Contributions and pull requests are welcome.
 
 MIT License.
 Copyright © 2013 Zc He.
-Copyright © 2013 David J Patrick.
+Copyright © 2021 David J Patrick.
 Copyright (C) 2019 Z Ma.
 
 ==============================================================================
