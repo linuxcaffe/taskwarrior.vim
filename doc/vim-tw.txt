@@ -3,6 +3,7 @@
     |_   _|_ _ __| |____ __ ____ _ _ _ _ _(_)___ _ _      __ _(_)_ __
       | |/ _` (_-< / /\ V  V / _` | '_| '_| / _ \ '_|  _  \ V / | '  \
       |_|\__,_/__/_\_\ \_/\_/\__,_|_| |_| |_\___/_|   (_)  \_/|_|_|_|_|
+
 ==============================================================================
 QUICK-REFERENCE                                                    *tw-quickref*
 
@@ -112,7 +113,6 @@ let g:task_rc_override = 'rc.defaultwidth=999'
 
 Default ones
 ------------------------------------------------------------------------------
-
 <F1>    <Plug>(taskwarrior_quickref)
 q       <Plug>(taskwarrior_quit)
 <left>  <Plug>(taskwarrior_skip_left)
@@ -130,7 +130,6 @@ J       <Plug>(taskwarrior_next_history)
 K       <Plug>(taskwarrior_previous_history)
 B       <Plug>(taskwarrior_new_bookmark)
 <CR>    <Plug>(taskwarrior_visual_show_info)
-
 A       <Plug>(taskwarrior_annotate)
 x       <Plug>(taskwarrior_denotate)
 o       <Plug>(taskwarrior_open_annotate)
@@ -173,7 +172,6 @@ Add something like these to your configuration files
 
 4.1 Global Commands                                             *tw-gl-commands*
 ------------------------------------------------------------------------------
-
 Almost the same as the shell command 'task'                                *:TW*
 Undo last move                                                         *:TWUndo*
 Edit taskrc right away                                           *:TWEditTaskrc*
@@ -183,9 +181,9 @@ list history records using |unite.vim|                              *:TWHistory*
 clear history                                                  *:TWHistoryClear*
 list bookmarks using |unite.vim|                                   *:TWBookmark*
 clear bookmarks                                               *:TWBookmarkClear*
+
 4.2 Local Commands                                              *tw-lc-commands*
 ------------------------------------------------------------------------------
-
 Add an annotation                                                  *:TWAnnotate*
 Mark task done                                                     *:TWComplete*
 Delete a task                                                        *:TWDelete*
@@ -256,7 +254,7 @@ Contributions and pull requests are welcome.
 MIT License.
 Copyright © 2013 Zc He.
 Copyright © 2021 David J Patrick.
-Copyright (C) 2019 Z Ma.
+Copyright (C) 2020 Z Ma.
 
 ==============================================================================
 9. CHANGELOG                                                      *tw-changelog*
