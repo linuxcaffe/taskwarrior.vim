@@ -40,7 +40,7 @@ let g:task_all_commands             = split(system(g:tw_cmd.' _command'), '\n')
 
 let g:task_filter                   = ['description:', 'proj:', 'pri:', 'status:', 'tag:', 'due.before:', 'due.after:', 'entry.before', 'entry.after', 'end.before', 'end.after', '+']
 let g:task_all_configurations       = split(system(g:tw_cmd.' _config'), '\n')
-let g:task_report_name              = index(g:task_report_command, get(g:, 'task_report_name')) != -1 ? get(g:, 'task_report_name') : 'next'
+let g:task_report_name              = index(g:task_report_command, get(g:, 'task_report_name')) != -1 ? get(g:, 'task_report_name') : 'list'
 let g:task_highlight_field          = get(g:, 'task_highlight_field', 1)
 let g:task_readonly                 = get(g:, 'task_readonly', 0)
 let g:task_rc_override              = get(g:, 'task_rc_override', '')
