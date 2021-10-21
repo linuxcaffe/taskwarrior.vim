@@ -1,7 +1,7 @@
-if exists('g:loaded_taskwarrior') && g:loaded_taskwarrior
-  echo "taskwarrior loaded"
-  finish
-endif
+"if exists('g:loaded_taskwarrior') && g:loaded_taskwarrior
+"  echo "taskwarrior loaded"
+"  finish
+"endif
 
 " FIRST -- WSL env in Windows OR native Linux env
 let s:is_win                        = has('win32') || has('win64')
