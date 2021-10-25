@@ -24,20 +24,20 @@ if exists('b:task_columns') && exists('b:task_report_columns')
     endfor
 endif
 
-highlight default link taskwarrior_tablehead   Tabline
-highlight default link taskwarrior_field       IncSearch
-highlight default link taskwarrior_selected    Visual
-highlight default link taskwarrior_id          VarId
-highlight default link taskwarrior_project     String
-highlight default link taskwarrior_Status      Include
-highlight default link taskwarrior_priority    Class
+highlight default link taskwarrior_depends     Todo
+highlight default link taskwarrior_description Normal
 highlight default link taskwarrior_due         Todo
 highlight default link taskwarrior_end         Keyword
-highlight default link taskwarrior_description Normal
 highlight default link taskwarrior_entry       Special
-highlight default link taskwarrior_depends     Todo
+highlight default link taskwarrior_field       IncSearch
+highlight default link taskwarrior_id          VarId
+highlight default link taskwarrior_priority    Class
+highlight default link taskwarrior_project     String
+highlight default link taskwarrior_selected    Visual
+highlight default link taskwarrior_status      Include
+highlight default link taskwarrior_tablehead   Tabline
 highlight default link taskwarrior_tags        Keyword
-highlight default link taskwarrior_uuid        VarId
 highlight default link taskwarrior_urgency     Todo
+highlight default link taskwarrior_uuid        VarId
 
 let b:current_syntax = 'taskreport'

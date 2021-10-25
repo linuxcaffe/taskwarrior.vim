@@ -43,15 +43,15 @@ Either [download zip file](https://github.com/farseer90718/vim-taskwarrior/archi
 and extract in ~/.vim or use your favorite plugin manager.
 
 - [Pathogen](https://github.com/tpope/vim-pathogen)
-    - `git clone https://github.com/xarthurx/taskwarrior.vim ~/.vim/bundle/taskwarrior.vim`
+    - `git clone https://github.com/linuxcaffe/taskwarrior.vim ~/.vim/bundle/taskwarrior.vim`
 - [Vundle](https://github.com/gmarik/vundle)
-    1. Add `Plugin 'xarthurx/taskwarrior.vim'` to .vimrc
+    1. Add `Plugin 'linuxcaffe/taskwarrior.vim'` to .vimrc
     2. Run `:BundleInstall`
 - [NeoBundle](https://github.com/Shougo/neobundle.vim)
-    1. Add `NeoBundle 'xarthurx/taskwarrior.vim'` to .vimrc
+    1. Add `NeoBundle 'linuxcaffe/taskwarrior.vim'` to .vimrc
     2. Run `:NeoBundleInstall`
 - [vim-plug](https://github.com/junegunn/vim-plug)
-    1. Add `Plug 'xarthurx/taskwarrior.vim'` to .vimrc
+    1. Add `Plug 'linuxcaffe/taskwarrior.vim'` to .vimrc
     2. Run `:PlugInstall`
 
 
@@ -134,7 +134,7 @@ vnoremap <buffer> D       ... " delete all visual selected tasks
 
 ```vim
 " default task report type
-let g:task_report_name     = 'next'
+let g:task_report_name     = 'list'
 " custom reports have to be listed explicitly to make them available
 let g:task_report_command  = []
 " whether the field under the cursor is highlighted

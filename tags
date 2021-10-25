@@ -1,0 +1,251 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/djp/.vim/pack/plugins/start/taskwarrior.vim/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210815.0/
++	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> +        <Plug>(taskwarrior_start_task)$/;"	m
+-	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> -        <Plug>(taskwarrior_stop_task)$/;"	m
+<	ftplugin/taskreport.vim	/^nmap <buffer> <       <Plug>(taskwarrior_sort_increase)$/;"	m
+<C-A>	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> <C-A>    <Plug>(taskwarrior_increase)$/;"	m
+<C-X>	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> <C-X>    <Plug>(taskwarrior_decrease)$/;"	m
+<CR>	ftplugin/taskreport.vim	/^nmap <buffer> <CR>    <Plug>(taskwarrior_show_info)$/;"	m
+<CR>	ftplugin/taskreport.vim	/^vmap <buffer> <CR>    <Plug>(taskwarrior_visual_show_info)$/;"	m
+<F1>	ftplugin/taskreport.vim	/^nmap <buffer> <F1>    <Plug>(taskwarrior_quickref)$/;"	m
+<Plug>(taskwarrior_annotate)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_annotate)        :call taskwarrior#action#annotate/;"	m
+<Plug>(taskwarrior_clear_completed)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_clear_completed) :call taskwarrior#action#clear_co/;"	m
+<Plug>(taskwarrior_command)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_command)         :call taskwarrior#action#command(/;"	m
+<Plug>(taskwarrior_decrease)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_decrease)        :<C-U>call taskwarrior#action#dat/;"	m
+<Plug>(taskwarrior_delete)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_delete)          :call taskwarrior#action#delete()/;"	m
+<Plug>(taskwarrior_denotate)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_denotate)        :call taskwarrior#action#annotate/;"	m
+<Plug>(taskwarrior_done)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_done)            :call taskwarrior#action#set_done/;"	m
+<Plug>(taskwarrior_filter)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_filter)           :call taskwarrior#action#filter(/;"	m
+<Plug>(taskwarrior_increase)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_increase)        :<C-U>call taskwarrior#action#dat/;"	m
+<Plug>(taskwarrior_modify_field)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_modify_field)    :call taskwarrior#action#modify('/;"	m
+<Plug>(taskwarrior_modify_task)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_modify_task)     :call taskwarrior#action#modify('/;"	m
+<Plug>(taskwarrior_new)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_new)             :call taskwarrior#action#new()<CR/;"	m
+<Plug>(taskwarrior_new_bookmark)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_new_bookmark)     :call taskwarrior#log#bookmark('/;"	m
+<Plug>(taskwarrior_next_format)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_next_format)      :call taskwarrior#action#columns/;"	m
+<Plug>(taskwarrior_next_history)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_next_history)     :call taskwarrior#log#history('n/;"	m
+<Plug>(taskwarrior_open_annotate)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_open_annotate)   :call taskwarrior#action#annotate/;"	m
+<Plug>(taskwarrior_paste)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_paste)           :call taskwarrior#action#paste()</;"	m
+<Plug>(taskwarrior_previous_format)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_previous_format)  :call taskwarrior#action#columns/;"	m
+<Plug>(taskwarrior_previous_history)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_previous_history) :call taskwarrior#log#history('p/;"	m
+<Plug>(taskwarrior_quickref)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_quickref)         :h tw-quickref<CR>$/;"	m
+<Plug>(taskwarrior_quit)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_quit)             :call taskwarrior#quit()<CR>$/;"	m
+<Plug>(taskwarrior_quit_all)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_quit_all)         :call taskwarrior#quit_all()<CR>$/;"	m
+<Plug>(taskwarrior_refresh)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_refresh)         :call taskwarrior#list()<CR>$/;"	m
+<Plug>(taskwarrior_report)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_report)          :call taskwarrior#action#report()/;"	m
+<Plug>(taskwarrior_select)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_select)          :call taskwarrior#action#select()/;"	m
+<Plug>(taskwarrior_show_info)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_show_info)        :call taskwarrior#action#show_in/;"	m
+<Plug>(taskwarrior_skip_left)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_skip_left)        :call taskwarrior#action#move_cu/;"	m
+<Plug>(taskwarrior_skip_right)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_skip_right)       :call taskwarrior#action#move_cu/;"	m
+<Plug>(taskwarrior_sort_decrease)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_sort_decrease)    :call taskwarrior#sort#by_column/;"	m
+<Plug>(taskwarrior_sort_increase)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_sort_increase)    :call taskwarrior#sort#by_column/;"	m
+<Plug>(taskwarrior_sort_inverse)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_sort_inverse)     :call taskwarrior#sort#by_column/;"	m
+<Plug>(taskwarrior_start_task)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_start_task)      :call taskwarrior#system_call(tas/;"	m
+<Plug>(taskwarrior_step_left)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_step_left)        :call taskwarrior#action#move_cu/;"	m
+<Plug>(taskwarrior_step_right)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_step_right)       :call taskwarrior#action#move_cu/;"	m
+<Plug>(taskwarrior_stop_task)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_stop_task)       :call taskwarrior#system_call(tas/;"	m
+<Plug>(taskwarrior_sync)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_sync)            :call taskwarrior#action#sync('sy/;"	m
+<Plug>(taskwarrior_undo)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_undo)            :call taskwarrior#action#undo()<C/;"	m
+<Plug>(taskwarrior_urgency)	ftplugin/taskreport.vim	/^nnoremap <silent> <buffer> <Plug>(taskwarrior_urgency)         :call taskwarrior#action#urgency(/;"	m
+<Plug>(taskwarrior_visual_delete)	ftplugin/taskreport.vim	/^vnoremap <silent> <buffer> <Plug>(taskwarrior_visual_delete)   :call taskwarrior#action#visual('/;"	m
+<Plug>(taskwarrior_visual_done)	ftplugin/taskreport.vim	/^vnoremap <silent> <buffer> <Plug>(taskwarrior_visual_done)     :call taskwarrior#action#visual('/;"	m
+<Plug>(taskwarrior_visual_select)	ftplugin/taskreport.vim	/^vnoremap <silent> <buffer> <Plug>(taskwarrior_visual_select)   :call taskwarrior#action#visual('/;"	m
+<Plug>(taskwarrior_visual_show_info)	ftplugin/taskreport.vim	/^vnoremap <silent> <buffer> <Plug>(taskwarrior_visual_show_info) :call taskwarrior#action#visual(/;"	m
+<S-tab>	ftplugin/taskreport.vim	/^nmap <buffer> <S-tab> <Plug>(taskwarrior_step_left)$/;"	m
+<Space>	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> <Space>  <Plug>(taskwarrior_select)$/;"	m
+<Space>	ftplugin/taskreport.vim	/^    vmap <silent> <buffer> <Space>  <Plug>(taskwarrior_visual_select)$/;"	m
+<enter>	autoload/taskinfo.vim	/^    nnoremap <silent> <buffer> <enter> :call taskinfo#quit()<CR>$/;"	m
+<left>	ftplugin/taskreport.vim	/^nmap <buffer> <left>  <Plug>(taskwarrior_skip_left)$/;"	m
+<right>	ftplugin/taskreport.vim	/^nmap <buffer> <right> <Plug>(taskwarrior_skip_right)$/;"	m
+<tab>	ftplugin/taskreport.vim	/^nmap <buffer> <tab>   <Plug>(taskwarrior_step_right)$/;"	m
+>	ftplugin/taskreport.vim	/^nmap <buffer> >       <Plug>(taskwarrior_sort_decrease)$/;"	m
+A	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> A        <Plug>(taskwarrior_annotate)$/;"	m
+Acknowledgement:	README.md	/^## Acknowledgement:$/;"	s	chapter:taskwarrior.vim
+B	ftplugin/taskreport.vim	/^nmap <buffer> B       <Plug>(taskwarrior_new_bookmark)$/;"	m
+Commands:	README.md	/^### Commands:$/;"	S	section:taskwarrior.vim""Options
+D	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> D        <Plug>(taskwarrior_delete)$/;"	m
+D	ftplugin/taskreport.vim	/^    vmap <silent> <buffer> D        <Plug>(taskwarrior_visual_delete)$/;"	m
+Default map:	README.md	/^### Default map:$/;"	S	section:taskwarrior.vim""Options
+H	ftplugin/taskreport.vim	/^nmap <buffer> H       <Plug>(taskwarrior_next_format)$/;"	m
+Installation:	README.md	/^## Installation:$/;"	s	chapter:taskwarrior.vim
+Introduction	README.md	/^## Introduction$/;"	s	chapter:taskwarrior.vim
+J	ftplugin/taskreport.vim	/^nmap <buffer> J       <Plug>(taskwarrior_next_history)$/;"	m
+K	ftplugin/taskreport.vim	/^nmap <buffer> K       <Plug>(taskwarrior_previous_history)$/;"	m
+L	ftplugin/taskreport.vim	/^nmap <buffer> L       <Plug>(taskwarrior_previous_format)$/;"	m
+License:	README.md	/^## License:$/;"	s	chapter:taskwarrior.vim
+M	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> M        <Plug>(taskwarrior_modify_task)$/;"	m
+Native Windows Support with WSL	README.md	/^### Native Windows Support with WSL$/;"	S	section:taskwarrior.vim""Installation:
+Options	README.md	/^## Options$/;"	s	chapter:taskwarrior.vim
+Prerequisites:	README.md	/^## Prerequisites:$/;"	s	chapter:taskwarrior.vim
+Q	ftplugin/taskreport.vim	/^nmap <buffer> Q       <Plug>(taskwarrior_quit_all)$/;"	m
+R	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> R        <Plug>(taskwarrior_refresh)$/;"	m
+S	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> S        <Plug>(taskwarrior_sync)$/;"	m
+Syntax highlightling:	README.md	/^### Syntax highlightling:$/;"	S	section:taskwarrior.vim""Options
+TW	plugin/taskwarrior.vim	/^command! -nargs=? -complete=customlist,taskwarrior#complete#TW TW :call taskwarrior#init(<q-args/;"	c
+TWAdd	ftplugin/taskreport.vim	/^    command! -buffer TWAdd               :call taskwarrior#action#new()$/;"	c
+TWAdd	plugin/taskwarrior.vim	/^command! -buffer TWAdd               :call taskwarrior#action#new()$/;"	c
+TWAnnotate	ftplugin/taskreport.vim	/^    command! -buffer TWAnnotate          :call taskwarrior#action#annotate('add')$/;"	c
+TWBookmarkClear	plugin/taskwarrior.vim	/^command! TWBookmarkClear :call taskwarrior#log#bookmark('clear')$/;"	c
+TWComplete	ftplugin/taskreport.vim	/^    command! -buffer TWComplete          :call taskwarrior#action#set_done()$/;"	c
+TWDelete	ftplugin/taskreport.vim	/^    command! -buffer TWDelete            :call taskwarrior#action#delete()$/;"	c
+TWDeleteAnnotation	ftplugin/taskreport.vim	/^    command! -buffer TWDeleteAnnotation  :call taskwarrior#action#annotate('del')$/;"	c
+TWDeleteCompleted	plugin/taskwarrior.vim	/^command! TWDeleteCompleted :call taskwarrior#action#clear_completed()$/;"	c
+TWEditTaskopenrc	plugin/taskwarrior.vim	/^command! TWEditTaskopenrc :execute "e ".$HOME."\/.taskopenrc"$/;"	c
+TWEditTaskrc	plugin/taskwarrior.vim	/^command! TWEditTaskrc :execute "e ".$HOME."\/.taskrc"$/;"	c
+TWEditVitrc	plugin/taskwarrior.vim	/^command! TWEditVitrc :execute "e ".$HOME."\/.vitrc"$/;"	c
+TWHistoryClear	plugin/taskwarrior.vim	/^command! TWHistoryClear :call taskwarrior#log#history('clear')$/;"	c
+TWModifyInteractive	ftplugin/taskreport.vim	/^    command! -buffer TWModifyInteractive :call taskwarrior#modify('')$/;"	c
+TWReportInfo	plugin/taskwarrior.vim	/^command! -nargs=? TWReportInfo :call taskwarrior#action#show_info(<q-args>)$/;"	c
+TWReportSort	ftplugin/taskreport.vim	/^command! -buffer -nargs=? -complete=customlist,taskwarrior#complete#sort TWReportSort :call task/;"	c
+TWSync	ftplugin/taskreport.vim	/^    command! -buffer TWSync              :call taskwarrior#action#sync('sync')$/;"	c
+TWToggleHLField	ftplugin/taskreport.vim	/^command! -buffer TWToggleHLField     :let g:task_highlight_field = (g:task_highlight_field ? 0 :/;"	c
+TWToggleReadonly	ftplugin/taskreport.vim	/^command! -buffer TWToggleReadonly    :let g:task_readonly = (g:task_readonly ? 0 : 1) | call tas/;"	c
+TWUndo	plugin/taskwarrior.vim	/^command! TWUndo :call taskwarrior#action#undo()$/;"	c
+Things added by xarthurx's fork	README.md	/^## Things added by xarthurx's fork$/;"	s	chapter:taskwarrior.vim
+U	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> U        <Plug>(taskwarrior_urgency)$/;"	m
+User options:	README.md	/^### User options:$/;"	S	section:taskwarrior.vim""Options
+X	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> X        <Plug>(taskwarrior_clear_completed)$/;"	m
+a	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> a        <Plug>(taskwarrior_new)$/;"	m
+airline#extensions#taskwarrior#apply	autoload/airline/extensions/taskwarrior.vim	/^function! airline#extensions#taskwarrior#apply(...)$/;"	f
+airline#extensions#taskwarrior#init	autoload/airline/extensions/taskwarrior.vim	/^function! airline#extensions#taskwarrior#init(ext)$/;"	f
+b:current_syntax	syntax/taskinfo.vim	/^let b:current_syntax = 'taskinfo'$/;"	v
+b:current_syntax	syntax/taskreport.vim	/^let b:current_syntax = 'taskreport'$/;"	v
+c	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> c        <Plug>(taskwarrior_command)$/;"	m
+d	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> d        <Plug>(taskwarrior_done)$/;"	m
+d	ftplugin/taskreport.vim	/^    vmap <silent> <buffer> d        <Plug>(taskwarrior_visual_done)$/;"	m
+exp	syntax/taskreport.vim	/^    let exp = 'syntax match taskwarrior_%s \/\\%%>1l\\%%%dc.*\\%%<%dc\/'$/;"	v
+exp	syntax/taskreport.vim	/^    let exp = 'syntax match taskwarrior_%s \/\\%%>1l\\%%%dv.*\\%%<%dv\/'$/;"	v
+f	ftplugin/taskreport.vim	/^nmap <buffer> f       <Plug>(taskwarrior_filter)$/;"	m
+g:listabc	autoload/taskwarrior/sort.vim	/^        let g:listabc = list$/;"	v
+g:loaded_taskwarrior	plugin/taskwarrior.vim	/^let g:loaded_taskwarrior = 1$/;"	v
+g:task_all_commands	plugin/taskwarrior.vim	/^let g:task_all_commands             = split(system(g:tw_cmd.' _command'), '\\n')$/;"	v
+g:task_all_configurations	plugin/taskwarrior.vim	/^let g:task_all_configurations       = split(system(g:tw_cmd.' _config'), '\\n')$/;"	v
+g:task_columns_format	plugin/taskwarrior.vim	/^let g:task_columns_format           = {$/;"	v
+g:task_default_prompt	plugin/taskwarrior.vim	/^let g:task_default_prompt           = get(g:, 'task_default_prompt', ['due', 'project', 'priorit/;"	v
+g:task_filter	plugin/taskwarrior.vim	/^let g:task_filter                   = ['description:', 'proj:', 'pri:', 'status:', 'tag:', 'due./;"	v
+g:task_gui_term	plugin/taskwarrior.vim	/^let g:task_gui_term                 = get(g:, 'task_gui_term', 1)$/;"	v
+g:task_highlight_field	plugin/taskwarrior.vim	/^let g:task_highlight_field          = get(g:, 'task_highlight_field', 1)$/;"	v
+g:task_info	autoload/taskinfo.vim	/^    let g:task_info = bufnr('%')$/;"	v
+g:task_info_arg	autoload/taskinfo.vim	/^    let g:task_info_arg = [a:command, a:filter]$/;"	v
+g:task_info_position	plugin/taskwarrior.vim	/^let g:task_info_position            = get(g:, 'task_info_position', 'belowright')$/;"	v
+g:task_info_size	plugin/taskwarrior.vim	/^let g:task_info_size                = get(g:, 'task_info_size', g:task_info_vsplit? 50 : 15)$/;"	v
+g:task_info_vsplit	plugin/taskwarrior.vim	/^let g:task_info_vsplit              = get(g:, 'task_info_vsplit', 0)$/;"	v
+g:task_interactive_command	plugin/taskwarrior.vim	/^let g:task_interactive_command      = ['annotate', 'denotate', 'execute', 'duplicate',$/;"	v
+g:task_left_arrow	plugin/taskwarrior.vim	/^let g:task_left_arrow               = get(g:, 'task_left_arrow', ' <<')$/;"	v
+g:task_log_directory	plugin/taskwarrior.vim	/^let g:task_log_directory            = get(g:, 'task_log_file', matchstr(system(g:tw_cmd.' show |/;"	v
+g:task_log_max	plugin/taskwarrior.vim	/^let g:task_log_max                  = get(g:, 'task_log_max', 10)$/;"	v
+g:task_rc_override	plugin/taskwarrior.vim	/^let g:task_rc_override              = get(g:, 'task_rc_override', '')$/;"	v
+g:task_readonly	plugin/taskwarrior.vim	/^let g:task_readonly                 = get(g:, 'task_readonly', 0)$/;"	v
+g:task_readonly_symbol	plugin/taskwarrior.vim	/^let g:task_readonly_symbol          = get(g:, 'task_readonly_symbol', '  ')$/;"	v
+g:task_report_command	plugin/taskwarrior.vim	/^let g:task_report_command           = extend(s:task_report_command, g:task_report_command)$/;"	v
+g:task_report_command	plugin/taskwarrior.vim	/^let g:task_report_command           = get(g:, 'task_report_command', [])$/;"	v
+g:task_report_name	plugin/taskwarrior.vim	/^let g:task_report_name              = index(g:task_report_command, get(g:, 'task_report_name')) /;"	v
+g:task_right_arrow	plugin/taskwarrior.vim	/^let g:task_right_arrow              = get(g:, 'task_right_arrow', '>> ')$/;"	v
+g:task_view	autoload/taskwarrior.vim	/^        let g:task_view += [bufnr('%')]$/;"	v
+g:task_view	autoload/taskwarrior.vim	/^        let g:task_view = [bufnr('%')]$/;"	v
+g:task_view	autoload/taskwarrior.vim	/^    let g:task_view = []$/;"	v
+g:tw_cmd	plugin/taskwarrior.vim	/^  let g:tw_cmd = 'task'$/;"	v
+g:tw_cmd	plugin/taskwarrior.vim	/^  let g:tw_cmd = 'wsl task'$/;"	v
+g:tw_cmd	plugin/taskwarrior.vim	/^let g:tw_cmd                        = get(g:, 'taskwarrior_cmd', g:tw_cmd)$/;"	v
+g:tw_grep	plugin/taskwarrior.vim	/^  let g:tw_grep = 'findstr'$/;"	v
+g:tw_grep	plugin/taskwarrior.vim	/^  let g:tw_grep = 'grep'$/;"	v
+g:tw_grep	plugin/taskwarrior.vim	/^let g:tw_grep                       = get(g:, 'taskwarrior_grep_cmd', g:tw_grep)$/;"	v
+m	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> m        <Plug>(taskwarrior_modify_field)$/;"	m
+o	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> o        <Plug>(taskwarrior_open_annotate)$/;"	m
+p	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> p        <Plug>(taskwarrior_paste)$/;"	m
+q	autoload/taskinfo.vim	/^    nnoremap <silent> <buffer> q :call taskinfo#quit()<CR>$/;"	m
+q	autoload/taskwarrior.vim	/^        nnoremap <buffer> q :call taskwarrior#Bclose(bufnr('%'))<CR>$/;"	m
+q	ftplugin/taskreport.vim	/^nmap <buffer> q       <Plug>(taskwarrior_quit)$/;"	m
+r	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> r        <Plug>(taskwarrior_report)$/;"	m
+s	ftplugin/taskreport.vim	/^nmap <buffer> s       <Plug>(taskwarrior_sort_inverse)$/;"	m
+s:active_getchar	autoload/taskwarrior/data.vim	/^function! s:active_getchar ()$/;"	f
+s:bookmark	autoload/unite/sources/task.vim	/^let s:bookmark = {$/;"	v
+s:bookmark_file	autoload/taskwarrior/log.vim	/^let s:bookmark_file = expand(g:task_log_directory).'\/.vim_tw.bookmark'$/;"	v
+s:context	autoload/airline/extensions/taskwarrior.vim	/^function s:context()$/;"	f
+s:fixup	autoload/webapi/json.vim	/^function! s:fixup(val, tmp)$/;"	f
+s:history	autoload/unite/sources/task.vim	/^let s:history = {$/;"	v
+s:history_file	autoload/taskwarrior/log.vim	/^let s:history_file  = expand(g:task_log_directory).'\/.vim_tw.history'$/;"	v
+s:is_win	plugin/taskwarrior.vim	/^let s:is_win                        = has('win32') || has('win64')$/;"	v
+s:kind	autoload/unite/kinds/task.vim	/^let s:kind = {$/;"	v
+s:kind	autoload/unite/kinds/task.vim	/^let s:kind.action_table.show = {$/;"	v
+s:kind.action_table.show.func	autoload/unite/kinds/task.vim	/^function! s:kind.action_table.show.func(candidate)$/;"	f
+s:make_source	autoload/unite/sources/task.vim	/^function! s:make_source(dict)$/;"	f
+s:nr2byte	autoload/webapi/json.vim	/^function! s:nr2byte(nr)$/;"	f
+s:nr2enc_char	autoload/webapi/json.vim	/^function! s:nr2enc_char(charcode)$/;"	f
+s:save_cpo	autoload/unite/kinds/task.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	autoload/unite/sources/task.vim	/^let s:save_cpo = &cpo$/;"	v
+s:save_cpo	autoload/webapi/json.vim	/^let s:save_cpo = &cpo$/;"	v
+s:task_report_command	plugin/taskwarrior.vim	/^let s:task_report_command           = ['active', 'all', 'blocked', 'blocking',  'burndown.daily'/;"	v
+s:template	autoload/unite/sources/task.vim	/^let s:template = {$/;"	v
+source.action_table.delete.func	autoload/unite/sources/task.vim	/^    function! source.action_table.delete.func(candidate)$/;"	f
+source.gather_candidates	autoload/unite/sources/task.vim	/^    function! source.gather_candidates(args, context)$/;"	f
+source.hooks.on_syntax	autoload/unite/sources/task.vim	/^    function! source.hooks.on_syntax(args, context)$/;"	f
+taskinfo#init	autoload/taskinfo.vim	/^function! taskinfo#init(command, filter, info)$/;"	f
+taskinfo#quit	autoload/taskinfo.vim	/^function! taskinfo#quit()$/;"	f
+taskwarrior#Bclose	autoload/taskwarrior.vim	/^function! taskwarrior#Bclose(buffer)$/;"	f
+taskwarrior#action#annotate	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#annotate(op)$/;"	f
+taskwarrior#action#clear_completed	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#clear_completed()$/;"	f
+taskwarrior#action#columns_format_change	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#columns_format_change(direction)$/;"	f
+taskwarrior#action#command	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#command()$/;"	f
+taskwarrior#action#date	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#date(count)$/;"	f
+taskwarrior#action#delete	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#delete()$/;"	f
+taskwarrior#action#filter	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#filter()$/;"	f
+taskwarrior#action#modify	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#modify(mode)$/;"	f
+taskwarrior#action#move_cursor	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#move_cursor(direction, mode)$/;"	f
+taskwarrior#action#new	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#new()$/;"	f
+taskwarrior#action#paste	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#paste()$/;"	f
+taskwarrior#action#report	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#report()$/;"	f
+taskwarrior#action#select	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#select()$/;"	f
+taskwarrior#action#set_done	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#set_done()$/;"	f
+taskwarrior#action#show_info	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#show_info(...)$/;"	f
+taskwarrior#action#sync	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#sync(action)$/;"	f
+taskwarrior#action#undo	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#undo()$/;"	f
+taskwarrior#action#urgency	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#urgency() abort$/;"	f
+taskwarrior#action#visual	autoload/taskwarrior/action.vim	/^function! taskwarrior#action#visual(action) range$/;"	f
+taskwarrior#buffer_var_init	autoload/taskwarrior.vim	/^function! taskwarrior#buffer_var_init()$/;"	f
+taskwarrior#command_type	autoload/taskwarrior.vim	/^function! taskwarrior#command_type(string)$/;"	f
+taskwarrior#complete#TW	autoload/taskwarrior/complete.vim	/^function! taskwarrior#complete#TW(A, L, P)$/;"	f
+taskwarrior#complete#command	autoload/taskwarrior/complete.vim	/^function! taskwarrior#complete#command(A, L, P)$/;"	f
+taskwarrior#complete#filter	autoload/taskwarrior/complete.vim	/^function! taskwarrior#complete#filter(A, L, P)$/;"	f
+taskwarrior#complete#report	autoload/taskwarrior/complete.vim	/^function! taskwarrior#complete#report(A, L, P)$/;"	f
+taskwarrior#complete#sort	autoload/taskwarrior/complete.vim	/^function! taskwarrior#complete#sort(A, L, P)$/;"	f
+taskwarrior#data#category	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#category()$/;"	f
+taskwarrior#data#current_column	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#current_column()$/;"	f
+taskwarrior#data#current_index	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#current_index()$/;"	f
+taskwarrior#data#get_args	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#get_args(...)$/;"	f
+taskwarrior#data#get_query	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#get_query(...)$/;"	f
+taskwarrior#data#get_stats	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#get_stats(method)$/;"	f
+taskwarrior#data#get_uuid	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#get_uuid(...)$/;"	f
+taskwarrior#data#get_value_by_column	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#get_value_by_column(line, column, ...)$/;"	f
+taskwarrior#data#get_value_by_index	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#get_value_by_index(line, index)$/;"	f
+taskwarrior#data#global_stats	autoload/taskwarrior/data.vim	/^function! taskwarrior#data#global_stats()$/;"	f
+taskwarrior#hi_field	autoload/taskwarrior.vim	/^function! taskwarrior#hi_field()$/;"	f
+taskwarrior#init	autoload/taskwarrior.vim	/^function! taskwarrior#init(...)$/;"	f
+taskwarrior#list	autoload/taskwarrior.vim	/^function! taskwarrior#list(...) abort$/;"	f
+taskwarrior#log#bookmark	autoload/taskwarrior/log.vim	/^function! taskwarrior#log#bookmark(action)$/;"	f
+taskwarrior#log#history	autoload/taskwarrior/log.vim	/^function! taskwarrior#log#history(action)$/;"	f
+taskwarrior#quit	autoload/taskwarrior.vim	/^function! taskwarrior#quit()$/;"	f
+taskwarrior#quit_all	autoload/taskwarrior.vim	/^function! taskwarrior#quit_all()$/;"	f
+taskwarrior#refresh	autoload/taskwarrior.vim	/^function! taskwarrior#refresh()$/;"	f
+taskwarrior#sort#by_arg	autoload/taskwarrior/sort.vim	/^function! taskwarrior#sort#by_arg(...)$/;"	f
+taskwarrior#sort#by_column	autoload/taskwarrior/sort.vim	/^function! taskwarrior#sort#by_column(polarity, column)$/;"	f
+taskwarrior#sort#order_list	autoload/taskwarrior/sort.vim	/^function! taskwarrior#sort#order_list()$/;"	f
+taskwarrior#system_call	autoload/taskwarrior.vim	/^function! taskwarrior#system_call(filter, command, args, mode)$/;"	f
+taskwarrior.vim	README.md	/^taskwarrior.vim$/;"	c
+u	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> u        <Plug>(taskwarrior_undo)$/;"	m
+unite#kinds#task#define	autoload/unite/kinds/task.vim	/^function! unite#kinds#task#define()$/;"	f
+unite#sources#task#define	autoload/unite/sources/task.vim	/^function! unite#sources#task#define()$/;"	f
+webapi#json#decode	autoload/webapi/json.vim	/^function! webapi#json#decode(json)$/;"	f
+webapi#json#encode	autoload/webapi/json.vim	/^function! webapi#json#encode(val)$/;"	f
+webapi#json#false	autoload/webapi/json.vim	/^function! webapi#json#false()$/;"	f
+webapi#json#null	autoload/webapi/json.vim	/^function! webapi#json#null()$/;"	f
+webapi#json#true	autoload/webapi/json.vim	/^function! webapi#json#true()$/;"	f
+x	ftplugin/taskreport.vim	/^    nmap <silent> <buffer> x        <Plug>(taskwarrior_denotate)$/;"	m
