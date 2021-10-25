@@ -69,7 +69,7 @@ nnoremap <buffer> -       ... " stop task
 nnoremap <buffer> <       ... " sort by this column ascending.(if already ascending then decrease its priority)
 nnoremap <buffer> >       ... " sort by this column descending.(if already descending then decrease its priority)
 nnoremap <buffer> <CR>    ... " show task info
-nnoremap <buffer> <F1>    ... " show vim-tw.txt help
+nnoremap <buffer> <F1>    ... " show tw-vim.txt help
 nnoremap <buffer> <left>  ... " skip left to the previous non-empty column
 nnoremap <buffer> <right> ... " skip right to the next non-empty column
 nnoremap <buffer> <TAB>   ... " move right the next column
