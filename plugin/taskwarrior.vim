@@ -22,10 +22,10 @@ let g:tw_cmd                        = get(g:, 'taskwarrior_cmd', g:tw_cmd)
 let g:tw_grep                       = get(g:, 'taskwarrior_grep_cmd', g:tw_grep)
 
 " not working for wsl task
-if !executable(system(g:tw_cmd))
-   echoerr "This plugin depends on taskwarrior(https://taskwarrior.org)."
-   finish
-endif
+"if !executable(system(g:tw_cmd))
+"   echoerr "This plugin depends on taskwarrior(https://taskwarrior.org)."
+"   finish
+"endif
 
 " global variable settings
 let g:task_report_command           = get(g:, 'task_report_command', [])
