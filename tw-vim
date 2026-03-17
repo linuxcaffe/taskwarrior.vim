@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # tw-vim — open Taskwarrior task report in vim/nvim
+# Plugin is installed as opt (not auto-loaded); this script loads it on demand.
 
 if command -v nvim &>/dev/null; then
-    exec nvim -c TW "$@"
+    exec nvim -c 'packadd taskwarrior.vim | TW' "$@"
 elif command -v vim &>/dev/null; then
-    exec vim -c TW "$@"
+    exec vim -c 'packadd taskwarrior.vim | TW' "$@"
 else
     echo "tw-vim: vim or nvim not found" >&2
     exit 1
