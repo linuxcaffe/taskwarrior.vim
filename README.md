@@ -39,20 +39,34 @@ Suggested plugins
 
 ## Installation:
 
-Either [download zip file](https://github.com/farseer90718/vim-taskwarrior/archive/master.zip)
-and extract in ~/.vim or use your favorite plugin manager.
+### Option 1 — Via [awesome-taskwarrior](https://github.com/linuxcaffe/awesome-taskwarrior)
 
-- [Pathogen](https://github.com/tpope/vim-pathogen)
-    - `git clone https://github.com/linuxcaffe/taskwarrior.vim ~/.vim/bundle/taskwarrior.vim`
-- [Vundle](https://github.com/gmarik/vundle)
-    1. Add `Plugin 'linuxcaffe/taskwarrior.vim'` to .vimrc
-    2. Run `:BundleInstall`
-- [NeoBundle](https://github.com/Shougo/neobundle.vim)
-    1. Add `NeoBundle 'linuxcaffe/taskwarrior.vim'` to .vimrc
-    2. Run `:NeoBundleInstall`
-- [vim-plug](https://github.com/junegunn/vim-plug)
-    1. Add `Plug 'linuxcaffe/taskwarrior.vim'` to .vimrc
-    2. Run `:PlugInstall`
+```bash
+tw -I taskwarrior.vim
+```
+
+Installs using Vim/Neovim's native pack system. Detects nvim and vim automatically,
+clones the repo, and generates helptags.
+
+### Option 2 — Native pack (manual)
+
+```bash
+# vim
+git clone --depth=1 https://github.com/linuxcaffe/taskwarrior.vim \
+    ~/.vim/pack/taskwarrior/start/taskwarrior.vim
+
+# neovim
+git clone --depth=1 https://github.com/linuxcaffe/taskwarrior.vim \
+    ~/.local/share/nvim/site/pack/taskwarrior/start/taskwarrior.vim
+```
+
+Then in vim/nvim: `:helptags ~/.vim/pack/taskwarrior/start/taskwarrior.vim/doc`
+
+### Option 3 — Plugin manager
+
+- [vim-plug](https://github.com/junegunn/vim-plug): `Plug 'linuxcaffe/taskwarrior.vim'`
+- [Pathogen](https://github.com/tpope/vim-pathogen): `git clone https://github.com/linuxcaffe/taskwarrior.vim ~/.vim/bundle/taskwarrior.vim`
+- [Vundle](https://github.com/gmarik/vundle): `Plugin 'linuxcaffe/taskwarrior.vim'`
 
 
 ### Native Windows Support with WSL
@@ -179,6 +193,21 @@ If you experience task truncation (taskwarrior.vim not showing enough tasks) add
 let g:task_rc_override = 'rc.defaultheight=0'
 ```
 ----
+### Bundled syntax files:
+
+The following Taskwarrior 2.x syntax files are bundled (from the Taskwarrior project, MIT license):
+
+| File | Covers |
+|------|--------|
+| `ftdetect/task.vim` | Filetype detection: `.taskrc`, `*.task`, `{pending,completed,undo}.data` |
+| `syntax/taskrc.vim` | Syntax highlighting for `.taskrc` config files |
+| `syntax/taskedit.vim` | Syntax for `task <id> edit` buffers |
+| `syntax/taskdata.vim` | Syntax for task data files |
+
+These activate automatically on opening the relevant files — no configuration needed.
+
+---
+
 ### Syntax highlightling:
 
 Default scheme:
