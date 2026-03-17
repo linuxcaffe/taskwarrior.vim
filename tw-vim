@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# tw-vim — open Taskwarrior task report in vim/nvim
+
+if command -v nvim &>/dev/null; then
+    exec nvim -c TW "$@"
+elif command -v vim &>/dev/null; then
+    exec vim -c TW "$@"
+else
+    echo "tw-vim: vim or nvim not found" >&2
+    exit 1
+fi
