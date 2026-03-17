@@ -43,7 +43,7 @@ let g:task_all_configurations       = split(system(g:tw_cmd.' _config'), '\n')
 let g:task_report_name              = index(g:task_report_command, get(g:, 'task_report_name')) != -1 ? get(g:, 'task_report_name') : 'list'
 let g:task_highlight_field          = get(g:, 'task_highlight_field', 1)
 let g:task_readonly                 = get(g:, 'task_readonly', 0)
-let g:task_rc_override              = get(g:, 'task_rc_override', '')
+let g:task_rc_override              = get(g:, 'task_rc_override', 'rc.defaultwidth=0')
 let g:task_default_prompt           = get(g:, 'task_default_prompt', ['due', 'project', 'priority', 'description', 'tag', 'depends']) " what to show when adding / modifying item
 let g:task_info_vsplit              = get(g:, 'task_info_vsplit', 0)
 let g:task_info_size                = get(g:, 'task_info_size', g:task_info_vsplit? 50 : 15)

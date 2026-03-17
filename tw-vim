@@ -3,9 +3,9 @@
 # Plugin is installed as opt (not auto-loaded); this script loads it on demand.
 
 if command -v nvim &>/dev/null; then
-    exec nvim -c 'packadd taskwarrior.vim | TW' "$@"
+    exec nvim -c 'packadd tw-vim | TW' "$@"
 elif command -v vim &>/dev/null; then
-    exec vim -c 'packadd taskwarrior.vim | TW' "$@"
+    exec vim -c 'packadd tw-vim | TW' "$@"
 else
     echo "tw-vim: vim or nvim not found" >&2
     exit 1
