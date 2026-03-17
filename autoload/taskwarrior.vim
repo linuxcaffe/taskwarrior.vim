@@ -107,7 +107,20 @@ function! taskwarrior#buffer_var_init()
     let b:rc      = get(b:, 'rc', g:task_rc_override)
 endfunction
 
+function! s:lazy_init()
+    if empty(g:task_all_commands)
+        let g:task_all_commands = split(system(g:tw_cmd.' _command'), '\n')
+    endif
+    if empty(g:task_all_configurations)
+        let g:task_all_configurations = split(system(g:tw_cmd.' _config'), '\n')
+    endif
+    if empty(g:task_log_directory)
+        let g:task_log_directory = substitute(system(g:tw_cmd.' _get rc.data.location'), '\n$', '', '')
+    endif
+endfunction
+
 function! taskwarrior#init(...)
+    call s:lazy_init()
     if exists(':TagbarClose')
         TagbarClose
     endif
